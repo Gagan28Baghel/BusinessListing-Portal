@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Business - Business Listing Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <script type="module" src="js/ListBusiness.js"></script>
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        #business-form-step1 {
+            max-width: 700px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .hero-image {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 50px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="business-form-step1">
+            <img src="" alt="List Your Business" class="hero-image">
+            <h3 class="text-center mb-4">Step 1: List Your Business</h3>
+            <p class="text-muted text-center">Fill in your business details below to get started.</p>
+            <div class="form-group">
+                <input type="text" id="business-name" class="form-control" placeholder="Business Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="pincode" class="form-control" placeholder="Pincode">
+            </div>
+            <div class="form-group">
+                <input type="text" id="block-number" class="form-control" placeholder="Block Number / Building Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="street-colony" class="form-control" placeholder="Street / Colony Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="area" class="form-control" placeholder="Area">
+            </div>
+            <div class="form-group">
+                <input type="text" id="landmark" class="form-control" placeholder="Landmark">
+            </div>
+            <div class="form-group">
+                <input type="text" id="city" class="form-control" placeholder="City">
+            </div>
+            <div class="form-group">
+                <input type="text" id="state" class="form-control" placeholder="State">
+            </div>
+            <button id="nextButton" class="btn btn-primary btn-block mt-4">Next ➔</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="js/ListBusiness.js"></script>
+    <script>
+        // Check if the user is authenticated when the page loads
+        checkAuth();
+    </script>
+</body>
+</html>

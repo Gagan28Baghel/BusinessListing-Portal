@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Blogs</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+       
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+       
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+       
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+       
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        
+        
+        <!-- Template Stylesheet -->
+    <link href="css/style1.css" rel="stylesheet">
+
+    <!-- Firebase and Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="module" src="js/List.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center" style="height:45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt me-2" style="color: #1c819e;"></i>Agra</a>
+                        <a href="#" class="text-light me-4"><i class="fas fa-phone-alt me-2" style="color: #1c819e;"></i>+91-8307060806</a>
+                        <a href="#" class="text-light me-0"><i class="fas fa-envelope me-2" style="color: #1c819e;"></i>localbusinessagra@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <span>
+                            <input type="text" placeholder="Search..." Value="" class="Search">
+                        </span>                       
+                        <a href="https://www.facebook.com/profile.php?id=61564552705566" class="btn btn-light btn-square border rounded-circle nav-fill me-3" style="margin-left: 10px;"><i class="fab fa-facebook-f"style="color:black;"></i></a>
+                        <a href="https://youtube.com/@agralocalbusiness?si=byAL3AgHolU8LT7i" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-youtube"style="color:black;"></i></a>
+                        <a href="https://www.instagram.com/agralocalbusiness?igsh=bzJ5YjU3b2o2Mzl4" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"style="color:black;"></i></a>
+                        <a href="https://www.linkedin.com/in/agra-business-listing/" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"style="color:black;"></i></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <!-- Topbar End -->
+    
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/Mlogo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="listing.html" class="nav-item nav-link">Free Listing</a>
+                        <!-- <a href="News.html" class="nav-item nav-link">News</a> -->
+                        <a href="Blog.html" class="nav-item nav-link">Blogs</a>
+                    </div>
+                    <a href="app2.html" class="btn rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="background-color:#1c819e;" >Enquiry</a>
+            </nav>
+        </div>
+    
+        <!-- Breadcrumb Start -->
+        <div class="container-fluid bg-breadcrumb" style="background-image: url('img/list.png');">
+            <div class="container text-center py-5" style="max-width: 900px; max-height: 150px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Free Listing</h3>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+    
+        <!-- Listing Start -->
+        <div class="listing-container">
+            <div class="content">
+                <h1>List Your Business <span>for FREE</span></h1>
+                <p>with India’s No. 1 Local Search Engine</p>
+    
+                <div class="input-group">
+                    <input type="text" id="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <button class="button2" id="startButton">Start Now ➔</button>
+                
+                <ul class="benefits">
+                    <li>✅ Get Discovered and Create Your Online Business</li>
+                    <li>✅ Respond to Customer Reviews and Questions</li>
+                    <li>✅ Showcase Your Product and Service Offerings</li>
+                </ul>
+    
+                <p class="terms">
+                    By continuing, you agree to our <a href="#">Terms of Use</a>, <a href="#">Privacy</a> & <a href="#">Infringement Policy</a>
+                </p>
+            </div>
+            <img src="img/prism-blog-banner-7a.jpg" class="listimg">
+        </div>
+        <!-- Listing End -->
+    
+        <!-- Steps Start -->
+        <div class="steps-container">
+            <h2>Get a FREE Business Listing in 3 Simple Steps</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="img/createaccount@2x.webp" alt="Step 1">
+                    <h3>Step 1</h3>
+                    <h4>Create Account</h4>
+                    <p>Enter your Email to get started</p>
+                </div>
+                <div class="step">
+                    <img src="img/enterbusinessdetails@2x.webp" alt="Step 2">
+                    <h3>Step 2</h3>
+                    <h4>Enter Business Details</h4>
+                    <p>Add name, address, business hours and photos</p>
+                </div>
+                <div class="step">
+                    <img src="img/selectcat@2x.webp" alt="Step 3">
+                    <h3>Step 3</h3>
+                    <h4>Select Categories</h4>
+                    <p>Add relevant categories to your free listing page</p>
+                </div>
+            </div>
+        </div>
+        <!-- Steps End -->
+    
+        <!-- Categories Display Start -->
+        <div class="container mt-5">
+            <h2>Businesses by Category</h2>
+            <div id="businessesList" class="row">
+                <!-- Businesses will be dynamically populated here -->
+            </div>
+        </div>
+        <!-- Categories Display End -->
+    
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <!-- Footer content -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+    
+        <!-- Custom Script -->
+        <script src="js/main.js"></script>
+        <script src="js/List.js"></script>
+
+        
+    </body>
+
+</html>
